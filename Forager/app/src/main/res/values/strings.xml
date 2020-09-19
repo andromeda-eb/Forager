@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Forager</string>
+    <string name="title_activity_book_result">BookResultActivity</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="book_list">Book List</string>
+    <string name="book_results_reply">You just came back from the search results page!</string>
+    <string name="book_result_reply">You just came back from the selected book page!</string>
+    <string name="about_reply">You just came back from the about page!</string>
+    <string name="book_list_reply">You just came back from the book list page!</string>
+    <string name="title_placeholder">Title</string>
+    <string name="book_description_placeholder">Book Info</string>
+    <string name="authors_title_placeholder">Author</string>
+
+    <string name="open">NavBar</string>
+    <string name="close">NavBar</string>
+    <string name="buyLinkStatusError">No link available</string>
+    <string name="settings_reply">You just came back from the settings page!</string>
+</resources>

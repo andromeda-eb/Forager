@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/bookImage"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/bookTitle"
+            style="@style/bookTitleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bookImage"
+            android:padding="8dp"
+            android:text="@string/title_placeholder"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:shadowColor="#000"
+            android:shadowRadius="1"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/authorsTitleView"
+            style="@style/bookAuthors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookTitle"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="Author(s): "
+            android:textColor="?android:textColorSecondary"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/authorsTitleItem"
+            android:text="@string/authors_title_placeholder"
+            android:padding="8dp"
+            style="@style/bookAuthors"
+            android:layout_below="@id/bookTitle"
+            android:layout_toRightOf="@+id/authorsTitleView"
+            android:textColor="?android:textColorSecondary"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/descriptionTitleView"
+            style="@style/bookDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authorsTitleItem"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="8dp"
+            android:text="Description: "
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookDescriptionItem"
+            android:text="@string/book_description_placeholder"
+            android:padding="8dp"
+            style="@style/bookDescription"
+            android:layout_below="@id/authorsTitleItem"
+            android:layout_toRightOf="@+id/descriptionTitleView"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
