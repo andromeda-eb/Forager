@@ -3,5 +3,5 @@ Android app that queries the google books API and returns relevant results. User
 User is able to optionally go to the official google books API to purchase a book they like.
 
 # Dependencies
-Java
+Java <br/>
 Android
